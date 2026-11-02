@@ -1,0 +1,17 @@
+[workspace]
+name = "smoke"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+statsmodels = "*"
+python = "3.12.*"
+pandas = ">=2.2,<3"
+numpy = "*"
+# Core Matplotlib, without optional desktop GUI packages.
+matplotlib-base = "*"
+ipykernel = "*"
+pre-commit = "*"
+
+[environments]
+smoke = []
